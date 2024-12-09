@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+  
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Navbar */
+.nav-link {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #37323E;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #FF748B;
+}
+
+
+/* Header */
+.header .row {
+    border: 2px solid #FF748B;
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .col-lg-3 {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content */
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.main .row {
+    border: 2px solid #FF748B;
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .row .col-lg-9 .row {
+    border: none;
+    justify-content: flex-start;
+}
+
+.main .col-lg-3 {
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* Card */
+.card-img-top {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn1 {
+    height: 40px;
+    width: 95px;
+    outline: none;
+    border: none;
+    border-radius: 60px;
+    background: #FF748B;;
+    color: white;
+    font-weight: 700;
+}
+
+.btn1:hover {
+    color: #FF748B;
+    background-color: white;
+    border: 1px solid #FF748B;
+    transition: 0.5s;
+}
+
+.btn2 {
+    height: 40px;
+    width: 95px;
+    outline: none;
+    border: none;
+    border-radius: 60px;
+    background: #FF748B;
+    color: white;
+    font-size: 14pt;
+    font-weight: 700;
+}
+
+.btn2:hover {
+    background-color: #FF748B;
+}
+
+.btn3 {
+    height: 40px;
+    width: 95px;
+    outline: none;
+    border: none;
+    border-radius: 60px;
+    background: #E70000;
+    color: white;
+    font-size: 14pt;
+    font-weight: 700;
+}
+
+.btn3:hover {
+    background-color: #C10101;
+}
+
+.btn4 {
+    height: 32px;
+    width: 72px;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    background: #E70000;
+    color: white;
+    font-size: 12pt;
+    font-weight: 700;
+}
+
+.btn4:hover {
+    background-color: #C10101;
+}
+
+.btn5 {
+    height: 32px;
+    width: 84px;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    background: #FF748B;
+    color: white;
+    font-size: 12pt;
+    font-weight: 700;
+}
+
+.btn5:hover {
+    background-color: #FF748B;
+}
+
+
+/* Background Utama */
+body {
+    background-color: #f8c9d1;  /* Mengubah latar belakang utama menjadi pink */
+}
+
+/* Navbar tetap */
+.navbar {
+    background-color: white;  /* Pastikan navbar tetap tanpa background atau sesuai warna yang diinginkan */
+}
+
+/* Header dan konten utama tetap diberi latar belakang */
+.header .row, .main .row {
+    background-color: white;  /* Pastikan konten utama tetap berwarna putih */
+}
+
+/* Navbar link tetap dengan warna teks */
+.nav-link {
+    color: #37323E;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #FF748B;
+}
+
+/* Tombol tetap seperti semula */
+.btn1, .btn2, .btn3, .btn4, .btn5 {
+    background-color: #FF748B; /* Latar belakang tombol */
+    color: white;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .btn5:hover {
+    background-color: white;
+    border: 1px solid #FF748B;
+    color: #FF748B;
+}
+
+/* Pastikan konten utama berwarna putih */
+.main .row, .header .row {
+    background-color: white;
+    border-radius: 24px;
+    border: 2px solid #FF748B;
+}
+
+
+/* Baru */
+img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-img-top {
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333;
+}
+
+

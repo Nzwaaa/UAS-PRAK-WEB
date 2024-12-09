@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    color: black;
+}
+
+.navbar-brand:hover {
+    color: black;
+}
+
+.nav-link {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #FF748B;
+}
+
+.btn1 {
+    height: 40px;
+    width: 95px;
+    outline: none;
+    border: none;
+    background-color: #FF748B;
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+}
+
+.btn1:hover {
+    color: #FF748B;
+    background-color: white;
+    border: 1px solid #FF748B;
+}
+
+.btn2 {
+    height: 40px;
+    width: 95px;
+    outline: none;
+    border: none;
+    background-color: #FF748B;
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+}
+
+.btn2:hover {
+    color: #FF748B;
+    background-color: white;
+    border: 1px solid #FF748B;
+}
+
+.btn3 {
+    height: 24px;
+    width: 48px;
+    outline: none;
+    border: none;
+    background-color: #37323E;
+    color: white;
+    font-size: 10pt;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.btn3:hover {
+    color: #37323E;
+    background-color: white;
+    border: 1px solid #37323E;
+}
+
+.btn4 {
+    margin-left: 2px;
+    height: 24px;
+    width: 64px;
+    outline: none;
+    border: none;
+    background-color: #E70000;
+    color: white;
+    font-size: 11pt;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.btn4:hover {
+    background-color: #C10101;
+}
+
+.judul {
+    color: #37323E;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.headtitle {
+    color: #FF748B;
+    font-weight:800;
+}

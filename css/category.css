@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f8c9d1; 
+    color: #37323E;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff; 
+    padding: 15px 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Navbar */
+.nav-link {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #FF748B;
+}
+
+/* Buttons */
+.btn1 {
+    height: 40px;
+    width: 95px;
+    outline: none;
+    border: none;
+    background-color: #FF748B;
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+}
+
+.btn1:hover {
+    color: #FF748B;
+    background-color: white;
+    border: 1px solid #FF748B;
+    transition: 0.5s;
+}
+
+.btn2 {
+    height: 40px;
+    width: 95px;
+    outline: none;
+    border: none;
+    background-color: #FF748B;
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+}
+
+.btn2:hover {
+    color: #FF748B;
+    background-color: white;
+    border: 1px solid #FF748B;
+    transition: 0.5s;
+}
+
+.btn3 {
+    height: 40px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background-color: #FCEFEF;
+    color: #37323E;
+    font-weight: 700;
+    border-radius: 60px;
+}
+
+.btn3:hover {
+    color: #FCEFEF;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid #FCEFEF;
+    transition: 0.5s;
+}
+
+.btn-light {
+    background-color: #fff;
+    border-color: #e4e4e4;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.list-menu {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.list-menu a {
+    color: #37323E;
+}
+
+/* Card */
+
+.card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
