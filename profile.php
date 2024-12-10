@@ -29,7 +29,6 @@ if (isset($_POST['submit'])) {
 
         $sql1 = "UPDATE user SET username = '$username', profpic = '$newImgName' WHERE user_id = $userid";
         $q1 = mysqli_query($conn, $sql1);
-
         if ($q1) {
             $success = "Profile updated successfully.";
             header("refresh:1;url=profile.php");
@@ -120,7 +119,8 @@ if (isset($_POST['delrecbtn']) && isset($_POST['recipe_id'])) {
 
     <!-- Start Header -->
 
-    <section class="header">
+    <!-- yang awal -->
+    <!-- <section class="header">
         <div class="container mt-5">
             <div class="row p-3">
                 <h1>Profile</h1>
@@ -133,14 +133,39 @@ if (isset($_POST['delrecbtn']) && isset($_POST['recipe_id'])) {
                 </div>
                 <div class="col-lg-3 p-3 text-center d-flex">
                     <div class="d-grid gap-2">
-                        <!-- Button trigger modal -->
+                        
                         <button class="btn2" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Edit</button>
-                        <!-- <button class="btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Delete</button> -->
+                        
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <!-- diubah2 -->
+    <section class="profile-recipes">
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Kiri: Profile -->
+            <div class="col-lg-3">
+                <div class="header p-3">
+                    <h1>Profile</h1>
+                    <div class="row">
+                        <div class="col-12 text-center p-4">
+                            <img src="img/<?php echo $getid["profpic"]; ?>" alt="image" height="150px" width="150px">
+                        </div>
+                        <div class="col-12 text-center" style="margin-top: 25px">
+                            <h3 style="font-weight: 700;"><?php echo $getid["username"]; ?></h3>
+                            <h5><?php echo $getid["email"]; ?></h5>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center align-items-cente">
+                            <div class="d-grid gap-2">
+                                <button class="btn2" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     <!-- End Header -->
 
@@ -172,6 +197,8 @@ if (isset($_POST['delrecbtn']) && isset($_POST['recipe_id'])) {
             </div>
         </div>
     </div>
+
+
 
     <!-- End Modal Form -->
 
@@ -221,7 +248,8 @@ if (isset($_POST['delrecbtn']) && isset($_POST['recipe_id'])) {
 
     <!-- Start Card Content -->
 
-    <section class="main">
+    <!-- yang awal -->
+    <!-- <section class="main">
         <div class="container">
             <div class="row mt-3 p-3 row-gap-4">
                 <h1>My Recipes</h1>
@@ -249,13 +277,47 @@ if (isset($_POST['delrecbtn']) && isset($_POST['recipe_id'])) {
                 <div class="col-lg-3 p-3 text-center d-flex">
                     <div class="d-grid gap-2">
                         <button class="btn2" onclick="location.href='uploadform.php'">Upload</button>
-                        <!-- <button class="btn3" onclick="location.href='profile.php'">Delete</button> -->
                         <button type="button" class="btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">Delete</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <!-- diubah -->
+    <div class="col-lg-9">
+                <div class="main p-3">
+                    <h1>My Recipes</h1>
+                    <div class="row">
+                        <?php
+                        if (mysqli_num_rows($rows) > 0) {
+                            foreach ($rows as $img) : ?>
+                                <div class="col-6 col-md-6 col-lg-3 px-3" onclick="location.href='recipe.php?recipe_id=<?php echo $img['recipe_id']; ?>'">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="img/<?php echo $img['recipe_img']; ?>" title="<?php echo $img['recipe_img']; ?>">
+                                        <div class="card-body">
+                                            <h6><?php echo $img['recipe_name']; ?></h6>
+                                            <a href="edit_recipe.php?recipe_id=<?php echo $img['recipe_id']; ?>" class="btn btn-warning btn-sm">Edit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        <?php endforeach;
+                        } else {
+                            echo '<p class="empty">No recipes found</p>';
+                        }
+                        ?>
+                    </div>
+                    <div class="col-12 p-3 text-center d-flex">
+                        <div class="d-grid gap-2">
+                            <button class="btn2" onclick="location.href='uploadform.php'">Upload</button>
+                            <button type="button" class="btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- End Card Content -->
 

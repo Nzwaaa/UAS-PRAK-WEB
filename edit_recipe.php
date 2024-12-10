@@ -100,6 +100,12 @@ if (isset($_POST['submit'])) {
                 <input type="text" id="recipe_name" class="form-control" name="recipe_name" value="<?php echo $recipeData['recipe_name']; ?>" placeholder="Recipe Name">
             </div>
 
+            <!-- Recipe Author -->
+            <div class="mb-3">
+                <label for="recipe_author" class="form-label">Recipe Author</label>
+                <input type="text" id="recipe_author" class="form-control" name="recipe_author" value="<?php echo $recipeData['recipe_author']; ?>" placeholder="Recipe Author">
+            </div>
+
             <!-- Recipe Image -->
             <div class="mb-3">
                 <label for="recipe_image" class="form-label">Recipe Image</label>

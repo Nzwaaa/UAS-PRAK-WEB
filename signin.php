@@ -33,8 +33,6 @@ if (isset($_POST['submit'])) {
     <title>Sign In</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/signin.css">
-    <link rel="stylesheet" href="css/signin.css?v=1.0">
-
 </head>
 
 <body>
@@ -42,10 +40,10 @@ if (isset($_POST['submit'])) {
     <section class="Form my-4 mx-5">
         <div class="container">
             <div class="row g-0">
-                <div class="col-lg-5">
-                    <img src="asset/poster1.png" class="img-fluid" alt="">
+                <div class="col-lg-6">
+                    <img src="asset/unduhan.jpg" class="img-fluid" alt="">
                 </div>
-                <div class="col-lg-7 px-5 pt-5 justify-content-center align-items-center flex-column">
+                <div class="col-lg-5" style="margin: 50px 0px 30px 73px; padding-left: 80px;">
                     <h1 class="logo"><img src="asset/ThePinkPantry.png" class="center"></h1>
                     <h4>Sign into your account</h4>
                     <form action="" method="post">

@@ -23,12 +23,12 @@
 
 
 /* Header */
-.header .row {
+/* .header .row {
     border: 2px solid #FF748B;
     border-radius: 24px;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .header .col-lg-3 {
     justify-content: center;
@@ -42,9 +42,9 @@ h1 {
 }
 
 .main .row {
-    border: 2px solid #FF748B;
+    /* border: 2px solid #FF748B; */
     border-radius: 24px;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -164,9 +164,9 @@ body {
 }
 
 /* Header dan konten utama tetap diberi latar belakang */
-.header .row, .main .row {
-    background-color: white;  /* Pastikan konten utama tetap berwarna putih */
-}
+/* .header .row, .main .row {
+     background-color: white;  Pastikan konten utama tetap berwarna putih 
+} */
 
 /* Navbar link tetap dengan warna teks */
 .nav-link {
@@ -192,11 +192,11 @@ body {
 }
 
 /* Pastikan konten utama berwarna putih */
-.main .row, .header .row {
-    background-color: white;
+/* .main .row, .header .row {
+    background-color: rgb(132, 25, 25);
     border-radius: 24px;
     border: 2px solid #FF748B;
-}
+} */
 
 
 /* Baru */
@@ -215,6 +215,27 @@ img {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #333;
+}
+
+
+/* tambahan */
+.profile-recipes .main {
+    border: 2px solid #FF748B;
+    border-radius: 24px;
+    background-color: white;
+}
+
+/* .profile-recipes .header {
+    height: 100%; /* Supaya menyesuaikan dengan tinggi bagian kanan */
+ */
+
+.profile-recipes img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-recipes .btn2, .profile-recipes .btn3 {
+    margin: 10px 0;
 }
 
 

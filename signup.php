@@ -38,10 +38,10 @@ if (isset($_POST['submit'])) {
     <section class="Form my-4 mx-5">
         <div class="container">
             <div class="row g-0">
-                <div class="col-lg-5">
-                    <img src="asset/poster1.png" class="img-fluid" alt="">
+                <div class="col-lg-6">
+                    <img src="asset/unduhan.jpg" class="img-fluid" alt="">
                 </div>
-                <div class="col-lg-7 px-5 pt-5">
+                <div class="col-lg-5">
                     <h1 class="logo"><img src="asset/ThePinkPantry.png" class="center"></h1>
                     <h4>Register your account</h4>
                     <form action="" method="post">

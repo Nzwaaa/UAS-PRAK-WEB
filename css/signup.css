@@ -44,3 +44,8 @@ img {
     border: 2px solid;
     color: #FF748B;
 }
+
+.col-lg-5{
+    margin: 50px 0px 30px 73px;
+    padding-left: 80px;
+}

@@ -70,6 +70,8 @@ $result = mysqli_fetch_assoc($rows);
             </div>
         </div>
     </nav>
+
+
     <!-- End Navbar -->
 
     <!-- Start Header/Title -->
@@ -90,6 +92,8 @@ $result = mysqli_fetch_assoc($rows);
 
     <!-- End Header/Title -->
 
+
+    
     <!-- Start Description -->
 
     <section class="desc mt-4">

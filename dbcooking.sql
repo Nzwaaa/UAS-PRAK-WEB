@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 27, 2023 at 09:32 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Waktu pembuatan: 09 Des 2024 pada 05.08
+-- Versi server: 10.4.32-MariaDB
+-- Versi PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bahan`
+-- Struktur dari tabel `bahan`
 --
 
 CREATE TABLE `bahan` (
@@ -34,18 +34,17 @@ CREATE TABLE `bahan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `bahan`
+-- Dumping data untuk tabel `bahan`
 --
 
 INSERT INTO `bahan` (`bahan_id`, `bahan_name`, `resep_id`) VALUES
-(19, 'Sayuran', 12),
-(20, 'Nasi', 13),
-(21, 'Santan', 13);
+(27, 'omaygay', 18),
+(28, 'enak', 18);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `category`
+-- Struktur dari tabel `category`
 --
 
 CREATE TABLE `category` (
@@ -54,7 +53,7 @@ CREATE TABLE `category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `category`
+-- Dumping data untuk tabel `category`
 --
 
 INSERT INTO `category` (`cat_id`, `cat_name`) VALUES
@@ -66,7 +65,7 @@ INSERT INTO `category` (`cat_id`, `cat_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `recipe`
+-- Struktur dari tabel `recipe`
 --
 
 CREATE TABLE `recipe` (
@@ -80,17 +79,16 @@ CREATE TABLE `recipe` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `recipe`
+-- Dumping data untuk tabel `recipe`
 --
 
 INSERT INTO `recipe` (`recipe_id`, `recipe_name`, `recipe_img`, `description`, `instructions`, `cat_id`, `user_id`) VALUES
-(12, 'Salad', '6472249c31daa.jpg', 'Salad Sayur', 'Campur aja semua', 1, 4),
-(13, 'Nasi Uduk', '647227ca37203.jpg', 'Nasi Uduk Enak', 'Masak Nasinya', 2, 4);
+(18, 'PAYPAY', '67565cf5a432d.png', 'suka suka cipa', 'masak dengan benar dan baik', 4, 5);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -102,34 +100,35 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`user_id`, `username`, `email`, `password`, `profpic`) VALUES
 (1, 'tes1', 'tes1@gmail.com', '698d51a19d8a121ce581499d7b701668', ''),
 (2, 'tes2', 'tes2@gmail.com', 'bae5e3208a3c700e3db642b6631e95b9', ''),
 (3, 'TES3', 'tes3@gmail.com', 'd27d320c27c3033b7883347d8beca317', '64724a0e807b8.png'),
-(4, 'tes4', 'tes4@apps.ipb.ac.id', 'dbc4d84bfcfe2284ba11beffb853a8c4', '6472453699ccc.png');
+(4, 'tes4', 'tes4@apps.ipb.ac.id', 'dbc4d84bfcfe2284ba11beffb853a8c4', '6472453699ccc.png'),
+(5, '', 'nazwa@gmail.com', '25d55ad283aa400af464c76d713c07ad', '67564fd9968ab.png');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `bahan`
+-- Indeks untuk tabel `bahan`
 --
 ALTER TABLE `bahan`
   ADD PRIMARY KEY (`bahan_id`),
   ADD KEY `resep_bahan` (`resep_id`);
 
 --
--- Indexes for table `category`
+-- Indeks untuk tabel `category`
 --
 ALTER TABLE `category`
   ADD PRIMARY KEY (`cat_id`);
 
 --
--- Indexes for table `recipe`
+-- Indeks untuk tabel `recipe`
 --
 ALTER TABLE `recipe`
   ADD PRIMARY KEY (`recipe_id`),
@@ -137,7 +136,7 @@ ALTER TABLE `recipe`
   ADD KEY `user_recipe` (`user_id`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`),
@@ -145,45 +144,45 @@ ALTER TABLE `user`
   ADD UNIQUE KEY `email` (`email`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `bahan`
+-- AUTO_INCREMENT untuk tabel `bahan`
 --
 ALTER TABLE `bahan`
-  MODIFY `bahan_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `bahan_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT for table `category`
+-- AUTO_INCREMENT untuk tabel `category`
 --
 ALTER TABLE `category`
   MODIFY `cat_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `recipe`
+-- AUTO_INCREMENT untuk tabel `recipe`
 --
 ALTER TABLE `recipe`
-  MODIFY `recipe_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `recipe_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `user_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `bahan`
+-- Ketidakleluasaan untuk tabel `bahan`
 --
 ALTER TABLE `bahan`
   ADD CONSTRAINT `resep_bahan` FOREIGN KEY (`resep_id`) REFERENCES `recipe` (`recipe_id`);
 
 --
--- Constraints for table `recipe`
+-- Ketidakleluasaan untuk tabel `recipe`
 --
 ALTER TABLE `recipe`
   ADD CONSTRAINT `recipe_cat` FOREIGN KEY (`cat_id`) REFERENCES `category` (`cat_id`),
